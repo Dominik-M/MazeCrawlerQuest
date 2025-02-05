@@ -22,7 +22,8 @@ public class DestroyOnSight : MonoBehaviour
             yield return new WaitForSeconds(raycastInterval);
 
             GameObject player = GameController.getInstance().GetPlayerInControl();
-            direction = (player.transform.position - transform.position).normalized;
+            Vector3 distance = player.transform.position - transform.position;
+            direction = distance.normalized;
             origin = transform.position;
             Ray ray = new Ray(origin, direction);
 

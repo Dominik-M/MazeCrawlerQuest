@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -162,6 +162,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1928cfdc3ebfd744be6805873950c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knobKreuz: {fileID: 21300000, guid: a5284229555dfb842875818316b70039, type: 3}
+  knobKreis: {fileID: 21300000, guid: f9531ba3a9519df44b53fc2eb4ae04e3, type: 3}
+  knobKasten: {fileID: 21300000, guid: f07baf7844f74f146ad229c4a965d207, type: 3}
+  knobDreieck: {fileID: 21300000, guid: 990c64be9814e2c4481c729cbe986c9a, type: 3}
+  knobToggle: {fileID: 21300000, guid: e7ec3915accb64e4fa5aea14c0f0cb80, type: 3}
+  affordance: {fileID: 1000247948}
+  affordanceToggle: {fileID: 524049492}
+  cashmoneyText: {fileID: 0}
+  affordanceText: {fileID: 1816491569}
+  deathText: {fileID: 0}
+  affordanceknob1: {fileID: 413901334}
+  affordanceknob2: {fileID: 689858360}
   player:
   - {fileID: 1512921396}
   - {fileID: 93586694}
@@ -408,7 +420,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -713,8 +725,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -788,7 +800,7 @@ MonoBehaviour:
   invertHorizontal: 0
   invertVertical: 0
   maxHorizontal: 4
-  maxVertical: 4
+  maxVertical: 0
   levelDimensions: {x: 16, y: 16}
 --- !u!1 &1000247948
 GameObject:
@@ -1416,9 +1428,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1383310464538981185, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055963811991607748, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217827710833208916, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264071060227704770, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550001405728795345, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169441959693422923, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446929821568731314, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303229413334100192, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436791767350170383, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 7633728098964417352, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
       propertyPath: m_Name
       value: BaseLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467484148699029343, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8945342326415241582, guid: 531de1f7c5693f346a1431c5f7ec57b3, type: 3}
       propertyPath: m_LocalPosition.x
